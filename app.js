@@ -16,7 +16,7 @@ const maxOfTwoNumbers = (x, y) => {
     }
   }
   
-  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+  console.log(maxOfTwoNumbers(3, 9));
 
   /*
 Exercise 2: isAdult()
@@ -51,8 +51,8 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-function isCharAVowel(vowel) {
-if (vowel === 'a', 'e', 'i', 'o', 'u') {
+function isCharAVowel(vowels) {
+if vowels === ('a', 'e', 'i', 'o', 'u') {
     console.log(true);
 } else {
     console.log(false)
@@ -74,10 +74,10 @@ Complete the exercise in the space below:
 */
 
 function generateEmail(name, domain) {
-console.log(`${name}${domain}`);
+return (`${name}${domain}`);
 }
 
-generateEmail('annajones','@live.co.uk')
+console.log(generateEmail('annajones','@live.co.uk'));
 // Returns a simple email addresss
 
 /*
@@ -128,11 +128,8 @@ Complete the exercise in the space below:
 */
 
 function calculateTip(billamount, tippercentage){
-// calculate the tip amount of 15%
-const tip = billamount - tippercentage
-const subtotal = 80
-const tip = calculateTip(subtotal);
-return subtotal - tip;
+const finalBill = billamount * tippercentage
+return finalBill
 }
 console.log(calculateTip(50,20))
 
